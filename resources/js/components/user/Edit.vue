@@ -20,6 +20,7 @@
 </template>
  
 <script>
+    import http from '../../apis/axios';
     export default {
         name: "Edit",
         data() {
@@ -28,6 +29,8 @@
             }
         },
         created() {
+            console.log(this.$route.params.id);
+
             // this.axios
             //     .get(`http://localhost:8000/api/products/${this.$route.params.id}`)
             //     .then((res) => {
@@ -35,6 +38,9 @@
             //     });
         },
         methods: {
+            getSingleUser() {
+                
+            },
             updateUser() {
                 // this.axios
                 //     .patch(`http://localhost:8000/api/products/${this.$route.params.id}`, this.product)
